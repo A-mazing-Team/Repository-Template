@@ -35,6 +35,7 @@
 - **FlatKit** - шейдеры для мультизации моделек
 - **GabrielAguiarProductions** - партиклы снарядов
 - **GUI PRO Kit - Casual Game** - модульный UI
+- **Low Poly Ultimate Pack** - набор разнообразных low-poly 3D моделей
 - **LunarConsole** - мобильная дебаг-консоль
 - **PolygonIcons** - набор иконок в 3D
 - **PolygonParticleFX** - набор полигональных партиклов

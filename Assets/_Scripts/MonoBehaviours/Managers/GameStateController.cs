@@ -3,7 +3,7 @@ using System;
 
 public enum GameState
 {
-    Menu, Playing, Win, Lose
+    Menu, Playing, ReviveCooldown, Win, Lose
 }
 
 public class GameStateController : MonoBehaviour
@@ -35,6 +35,10 @@ public class GameStateController : MonoBehaviour
 
                 case GameState.Playing:
                     TryStartGame();
+                    break;
+                
+                case GameState.ReviveCooldown:
+                    StartReviveCooldown();
                     break;
 
                 case GameState.Win:
@@ -70,6 +74,11 @@ public class GameStateController : MonoBehaviour
         OnGameStartedEvent?.Invoke();
     }
 
+    private void StartReviveCooldown()
+    {
+
+    }
+
     private void TryWin()
     {
         if (IsPlaying == false) return;
@@ -77,6 +86,7 @@ public class GameStateController : MonoBehaviour
 
         OnWinEvent?.Invoke();
     }
+
 
     private void TryLose()
     {

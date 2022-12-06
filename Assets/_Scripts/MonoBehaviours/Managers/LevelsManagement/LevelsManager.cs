@@ -10,7 +10,7 @@ public class LevelsManager : MonoBehaviour
     [SerializeField] private Transform _levelsParent;
     [SerializeField] private Level[] _levels;
     [SerializeField] private float _restartDelay;
-    [SerializeField] private bool _fading;
+    //[SerializeField] private bool _fading;
 
 #if UNITY_EDITOR
     [Header("=== TESTING ===")]

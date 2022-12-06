@@ -30,7 +30,7 @@ public class LevelCheat : MonoBehaviour
     public void OnValueChanged(int value)
     {
         _levelsManager.CompletedLevels = value;
-        _levelsManager.CurrentLevelNumber = value;
+        _levelsManager.LevelNumber = value;
         _levelsManager.RestartLevel();
     }
 }

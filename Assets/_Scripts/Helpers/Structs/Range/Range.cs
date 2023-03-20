@@ -13,4 +13,8 @@ public struct Range
     }
 
     public float RandomValue => Random.Range(min, max);
+    public float Clamp(float value)
+    {
+        return Mathf.Clamp(value, min, max);
+    }
 }

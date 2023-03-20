@@ -68,9 +68,4 @@ public class UIPanel : MonoBehaviour
         if (_hideAnimation != null) _hideAnimation.Play(() => _content.SetActive(false));
         else _content.SetActive(false);
     }
-
-    private void OnGUI()
-    {
-        GUI.backgroundColor = Color.red;
-    }
 }

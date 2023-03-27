@@ -4,6 +4,7 @@ using System;
 public class Live : MonoBehaviour
 {
     public event Action OnHealthChangedEvent;
+    public event Action OnDamageTakenEvent;
     public event Action OnDeadEvent;
     public event Action OnRevivedEvent;
 
@@ -13,7 +14,6 @@ public class Live : MonoBehaviour
     #endregion
 
     #region Properties
-    public Transform Transform => transform;
     public float MaxHealth => _maxHealth;
 
     private float _health;
@@ -54,6 +54,7 @@ public class Live : MonoBehaviour
     public void GetDamage(float damage)
     {
         Health -= damage;
+        OnDamageTakenEvent?.Invoke();
         if (_debug) Debug.Log($"{gameObject.name} taked dmage ({damage})");
     }
 

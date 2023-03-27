@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UIMoveAnimation : CustomAnimation
 {
-    [SerializeField] private RectTransform _animationRect;
+    [SerializeField] private RectTransform _animatingRect;
     [SerializeField] private Vector2 _originAnchoredPosition;
     [SerializeField] private Vector2 _targetAnchoredPosition;
 
@@ -12,10 +12,10 @@ public class UIMoveAnimation : CustomAnimation
     {
         TryKillAndCreateNewSequence();
 
-        _animationRect.anchoredPosition = _originAnchoredPosition;
+        _animatingRect.anchoredPosition = _originAnchoredPosition;
 
         Sequence.Append(
-            _animationRect.DOAnchorPos(_targetAnchoredPosition, Properties.Duration)
+            _animatingRect.DOAnchorPos(_targetAnchoredPosition, Properties.Duration)
             .SetEase(Properties.Ease, Properties.EaseOvershoot)
             );
     }
@@ -24,6 +24,6 @@ public class UIMoveAnimation : CustomAnimation
     {
         TryKillSequence();
 
-        _animationRect.anchoredPosition = _targetAnchoredPosition;
+        _animatingRect.anchoredPosition = _targetAnchoredPosition;
     }
 }

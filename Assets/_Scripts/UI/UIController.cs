@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class UIController : MonoBehaviour
@@ -8,10 +7,11 @@ public class UIController : MonoBehaviour
     [SerializeField] private UIPanel[] panels;
 
     public enum Windows { Game, Victory, Lose }
+    [Space(20)]
     [SerializeField] private Windows currentWindow;
     #endregion
 
-    [ContextMenu("Change Window")]
+    [Button]
     public void ChangeWindow()
     {
         foreach (UIPanel panel in panels)

@@ -1,6 +1,8 @@
 ﻿namespace _Scripts.SaveSystem2.SaveData.Serialization
 {
-	/*public class OdinSerializer : ISerializer
+	using Sirenix.Serialization;
+
+	public class OdinSerializer : ISerializer
 	{
 		public byte[] SerializeBinary( object obj )
 		{
@@ -36,6 +38,6 @@
 
 			return obj;
 		}
-	}*/
+	}
 }
 

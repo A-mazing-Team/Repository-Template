@@ -366,5 +366,7 @@ MonoBehaviour:
     alignWindowToBar: 1
     windowMode: 0
   _sceneHistory:
+  - name: Main
+    path: Assets/_Scenes/Main.unity
   - name: DemoScene_(v2.0)
     path: Assets/Third-party/GUI PRO Kit - Casual Game/Scenes/DemoScene_(v2.0).unity

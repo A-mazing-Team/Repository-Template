@@ -3484,7 +3484,7 @@ GameObject:
   m_Layer: 0
   m_Name: Next
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2800000, guid: 83c4252c97d8e4daeba99d69cfa5cb32, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3710,7 +3710,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!114 &1498820575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4844,7 +4844,7 @@ GameObject:
   m_Layer: 0
   m_Name: Restart
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2800000, guid: 35140fa6d4c8ad24bb6ea0ae51e6a6b7, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
